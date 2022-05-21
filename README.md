@@ -25,7 +25,7 @@
 
 # Example:
 
-    python PVE_calculator.py -i result.assoc.txt -o result_pve.assoc.txt
+    python PVE_calculator.py -i result.assoc.txt -n 393 -o result_pve.assoc.txt
 
 
 # Method 
