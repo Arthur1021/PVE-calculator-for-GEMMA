@@ -11,16 +11,18 @@ args = parser.parse_args()
 info_pve = []
 infile = open (args.i,'r')
 head = infile.readline()
-for myline in infile:
-    myline = myline.strip()
-    myitem = myline.split()
-    beta = float(myitem[7])
-    MAF = float(myitem[6])
-    se = float(myitem[8])
-    N = args.n - int(myitem[3])
-    #calculate pve
-    pve = float(2*(beta**2)*MAF*(1-MAF))/(2*(beta**2)*MAF*(1-MAF)+(se**2)*2*N*MAF*(1-MAF))
-    info_pve.append(myline+'\t'+str(pve))
+item = head.split('\t')
+if item[3] == 'n_miss' and item[6] == 'af' and item[7] == 'beta' and item[8] == 'se':
+    for myline in infile:
+        myline = myline.strip()
+        myitem = myline.split()
+        beta = float(myitem[7])
+        MAF = float(myitem[6])
+        se = float(myitem[8])
+        N = args.n - int(myitem[3])
+            #calculate pve
+        pve = float(2*(beta**2)*MAF*(1-MAF))/(2*(beta**2)*MAF*(1-MAF)+(se**2)*2*N*MAF*(1-MAF))
+        info_pve.append(myline+'\t'+str(pve))
 infile.close()
 
 outfile = open (args.o,'w')
