@@ -27,6 +27,11 @@
 
     python PVE_calculator.py -i result.assoc.txt -n 393 -o result_pve.assoc.txt
 
+    input file format:
+    
+    chr     rs      ps      n_miss  allele1 allele0 af      beta    se      logl_H1 l_remle p_wald
+    1       SNP1     4299    3       A       G       0.146   5.719998e-03    7.461198e-02    -3.474714e+02   1.000000e+05
+    1       SNP2     9233    1       C       T       0.149   -5.827880e-03   7.279702e-02    -3.474784e+02   1.000000e+05
 
 ## Method 
 
