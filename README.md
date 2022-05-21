@@ -1,15 +1,15 @@
-# PVE-calculator-for-GEMMA
-    PVE calculator for GWAS result from GEMMA
+# Phenotypic variation explained (PVE) for Genome-wide Efficient Mixed Model Association (GEMMA)
+## PVE calculator for GEMMA
 
     GEMMA is a software toolkit for fast application of linear mixed models (LMMs) and related models to genome-wide 
     association studies (GWAS) and other large-scale data sets.
 
     https://github.com/genetics-statistics/GEMMA
 
-    The phenotypic variation explained (PVE) is not provided by the GEMMA.
+    The phenotypic variation explained (PVE) by each SNP is not provided by the GEMMA.
 
 
-# Run PVE calculator
+## Run PVE calculator
 
     python PVE_calculator.py -h
         
@@ -23,12 +23,12 @@
         -o O  output file, association result with PVE, required
 
 
-# Example:
+## Example:
 
     python PVE_calculator.py -i result.assoc.txt -n 393 -o result_pve.assoc.txt
 
 
-# Method 
+## Method 
 
     from S1_Text.pdf
     Shim, H., Chasman, D. I., Smith, J. D., Mora, S., Ridker, P. M., Nickerson, D. A., ... & Stephens, M. (2015). 
