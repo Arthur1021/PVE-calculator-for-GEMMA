@@ -35,6 +35,7 @@
 
 ## Method 
 
+    pve = (2*(BETA^2)*MAF*(1 - MAF))/((2*(BETA^2)*MAF*(1 - MAF)) + ((SE^2)*2*N*MAF*(1 - MAF)))
     from S1_Text.pdf
     Shim, H., Chasman, D. I., Smith, J. D., Mora, S., Ridker, P. M., Nickerson, D. A., ... & Stephens, M. (2015). 
     A multivariate genome-wide association analysis of 10 LDL subfractions, and their response to statin treatment, 
